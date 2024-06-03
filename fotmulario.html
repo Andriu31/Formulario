@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y tablas </title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    
+
+<form id="myForm">
+    <h2>Ingrese sus datos:</h2>
+    <label for="nombre">Nombre:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br>
+
+    <label for="apellido">Apellido:</label><br>
+    <input type="text" id="apellido" name="apellido" required><br>
+
+    <label for="edad">Edad:</label><br>
+    <input type="number" id="edad" name="edad" required><br>
+
+    <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+
+    <label for="foto">Foto:</label><br>
+    <input type="file" id="foto" name="foto" accept="image/*" required><br>
+
+    <input id="button" type="button" value="Guardar" onclick="guardarDatos()">
+</form>
+
+<h2>Datos ingresados:</h2>
+
+<table id="dataTable" >
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+            <th>Fecha de Nacimiento</th>
+            <th>Foto</th>
+        </tr>
+    </thead>
+    <tbody id="dataBody">
+    </tbody>
+</table>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
